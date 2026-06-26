@@ -30,33 +30,36 @@ export default function Hero() {
               </Link>
             </div>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex flex-col gap-4">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
-                alt="Modern office with IT equipment"
-                className="w-full h-[500px] object-cover"
+                src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=800&q=80"
+                alt="Business team working with modern technology"
+                className="w-full h-72 object-cover"
               />
-              <div className="absolute inset-0 bg-[#1a2b4a] opacity-20 rounded-2xl" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="border-t border-white border-opacity-10 bg-white bg-opacity-5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { value: 'Fixed', label: 'Monthly Payments' },
-              { value: 'OpEx', label: 'Friendly Financing' },
-              { value: '100%', label: 'Tailored Packages' },
-              { value: 'Dell', label: 'Certified Hardware' },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <div className="text-2xl md:text-3xl font-bold text-[#2b6cb0]">{stat.value}</div>
-                <div className="text-blue-200 text-sm mt-1">{stat.label}</div>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1a2b4a] to-transparent p-6">
+                <p className="text-white font-semibold text-lg">Empowering teams with modern IT</p>
+                <p className="text-blue-200 text-sm">Flexible leasing for businesses of all sizes</p>
               </div>
-            ))}
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white bg-opacity-10 rounded-xl p-5 border border-white border-opacity-10">
+                <div className="text-3xl font-bold text-[#2b6cb0]">100%</div>
+                <div className="text-blue-200 text-sm mt-1">Tailored packages</div>
+              </div>
+              <div className="bg-white bg-opacity-10 rounded-xl p-5 border border-white border-opacity-10">
+                <div className="text-3xl font-bold text-[#2b6cb0]">Fixed</div>
+                <div className="text-blue-200 text-sm mt-1">Monthly payments</div>
+              </div>
+              <div className="bg-white bg-opacity-10 rounded-xl p-5 border border-white border-opacity-10">
+                <div className="text-3xl font-bold text-[#2b6cb0]">OpEx</div>
+                <div className="text-blue-200 text-sm mt-1">Friendly financing</div>
+              </div>
+              <div className="bg-white bg-opacity-10 rounded-xl p-5 border border-white border-opacity-10">
+                <div className="text-3xl font-bold text-[#2b6cb0]">Dell</div>
+                <div className="text-blue-200 text-sm mt-1">Certified hardware</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
