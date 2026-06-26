@@ -3,38 +3,32 @@ export default function HowItWorksPage() {
     {
       number: '01',
       title: 'Tell Us What You Need',
-      description:
-        'Get in touch and tell us about your business and the IT equipment you require. Whether it\'s a handful of laptops or a full server room upgrade, we\'ll listen and advise.',
+      description: 'Get in touch and tell us about your business and the IT equipment you require. Whether it is a handful of laptops or a full server room upgrade, we will listen and advise.',
     },
     {
       number: '02',
       title: 'We Build Your Package',
-      description:
-        'Our team designs a leasing package tailored to your budget and business cycle. We source quality Dell hardware and structure fixed, predictable payments that work for you.',
+      description: 'Our team designs a leasing package tailored to your budget and business cycle. We source quality Dell hardware and structure fixed, predictable payments that work for you.',
     },
     {
       number: '03',
       title: 'Simple Application',
-      description:
-        'Complete our straightforward application process. We work with businesses of all sizes and financial backgrounds to find a solution that fits.',
+      description: 'Complete our straightforward application process. We work with businesses of all sizes and financial backgrounds to find a solution that fits.',
     },
     {
       number: '04',
       title: 'Equipment Delivered',
-      description:
-        'Once approved, your equipment is delivered and ready to use. Your team gets access to modern, reliable technology without the large upfront cost.',
+      description: 'Once approved, your equipment is delivered and ready to use. Your team gets access to modern, reliable technology without the large upfront cost.',
     },
     {
       number: '05',
       title: 'Ongoing Support',
-      description:
-        'Throughout your lease term we are here to help. At the end of your agreement, simply upgrade to the latest technology and start a new term.',
+      description: 'Throughout your lease term we are here to help. At the end of your agreement, simply upgrade to the latest technology and start a new term.',
     },
   ]
 
   return (
     <div className="min-h-screen">
-      {/* Hero */}
       <section className="bg-[#1a2b4a] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">How It Works</h1>
@@ -44,7 +38,6 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      {/* Steps */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative">
@@ -68,7 +61,6 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-[#1a2b4a] mb-4">Ready to Get Started?</h2>
