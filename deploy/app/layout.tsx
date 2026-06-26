@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { LanguageProvider } from '@/lib/LanguageContext'
 
 export const metadata: Metadata = {
   title: 'Long Term Leasing S.R.L | Flexible IT Hardware Leasing',
@@ -16,9 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <LanguageProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   )
