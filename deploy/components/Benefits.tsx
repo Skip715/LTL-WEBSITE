@@ -53,8 +53,8 @@ export default function Benefits() {
           </div>
           <div className="hidden lg:block rounded-2xl overflow-hidden shadow-lg">
             <img
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
-              alt="Business team working with technology"
+              src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&q=80"
+              alt="Business professionals in modern office"
               className="w-full h-64 object-cover"
             />
           </div>
