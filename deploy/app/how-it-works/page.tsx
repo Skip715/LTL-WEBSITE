@@ -1,29 +1,29 @@
 export default function HowItWorksPage() {
   const steps = [
     {
-      number: '01',
-      title: 'Tell Us What You Need',
-      description: 'Get in touch and tell us about your business and the IT equipment you require. Whether it is a handful of laptops or a full server room upgrade, we will listen and advise.',
+      number: "01",
+      title: "Tell Us What You Need",
+      description: "Get in touch and tell us about your business and the IT equipment you require. Whether it is a handful of laptops or a full server room upgrade, we will listen and advise.",
     },
     {
-      number: '02',
-      title: 'We Build Your Package',
-      description: 'Our team designs a leasing package tailored to your budget and business cycle. We source quality Dell hardware and structure fixed, predictable payments that work for you.',
+      number: "02",
+      title: "We Build Your Package",
+      description: "Our team designs a leasing package tailored to your budget and business cycle. We source quality Dell hardware and structure fixed, predictable payments that work for you.",
     },
     {
-      number: '03',
-      title: 'Simple Application',
-      description: 'Complete our straightforward application process. We work with businesses of all sizes and financial backgrounds to find a solution that fits.',
+      number: "03",
+      title: "Simple Application",
+      description: "Complete our straightforward application process. We work with businesses of all sizes and financial backgrounds to find a solution that fits.",
     },
     {
-      number: '04',
-      title: 'Equipment Delivered',
-      description: 'Once approved, your equipment is delivered and ready to use. Your team gets access to modern, reliable technology without the large upfront cost.',
+      number: "04",
+      title: "Equipment Delivered",
+      description: "Once approved, your equipment is delivered and ready to use. Your team gets access to modern, reliable technology without the large upfront cost.",
     },
     {
-      number: '05',
-      title: 'Ongoing Support',
-      description: 'Throughout your lease term we are here to help. At the end of your agreement, simply upgrade to the latest technology and start a new term.',
+      number: "05",
+      title: "Ongoing Support",
+      description: "Throughout your lease term we are here to help. At the end of your agreement, simply upgrade to the latest technology and start a new term.",
     },
   ]
 
