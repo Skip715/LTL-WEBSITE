@@ -6,7 +6,7 @@ export default function Equipment() {
       name: 'Dell Monitors',
       description: 'Professional displays from 27" to 40". Perfect for productive workspaces.',
       items: ['Dell P2725QE', 'Dell P3225QE', 'Dell U2725QE', 'Dell U3225QE', 'Dell U4025QW'],
-      image: 'https://images.unsplash.com/photo-1585792180666-f7347c490ee2?w=600&q=80',
+     image: 'https://images.unsplash.com/photo-1547119957-637f8679db1e?w=600&q=80',
     },
     {
       name: 'Dell Docking Stations',
