@@ -1,5 +1,7 @@
 'use client'
 import { useLanguage } from '@/lib/LanguageContext'
+import PageHero from '@/components/PageHero'
+import BrandBar from '@/components/BrandBar'
 import { CONTACT_EMAIL } from '@/lib/site'
 
 export default function ContactPage() {
@@ -7,17 +9,13 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen">
-      <section className="bg-[#1F2531] text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.contact.heroHeading}</h1>
-          <p className="text-xl text-blue-200 max-w-2xl">{t.contact.heroSub}</p>
-        </div>
-      </section>
+      <PageHero heading={t.contact.heroHeading} sub={t.contact.heroSub} />
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
+              <BrandBar className="mb-5" />
               <h2 className="text-2xl font-bold text-[#1F2531] mb-8">{t.contact.formHeading}</h2>
               <div className="space-y-6">
                 <div>
@@ -44,6 +42,7 @@ export default function ContactPage() {
             </div>
 
             <div>
+              <BrandBar className="mb-5" />
               <h2 className="text-2xl font-bold text-[#1F2531] mb-8">{t.contact.infoHeading}</h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">

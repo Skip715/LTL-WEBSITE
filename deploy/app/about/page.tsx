@@ -1,22 +1,20 @@
 'use client'
 import { useLanguage } from '@/lib/LanguageContext'
+import PageHero from '@/components/PageHero'
+import BrandBar from '@/components/BrandBar'
 
 export default function AboutPage() {
   const { t } = useLanguage()
 
   return (
     <div className="min-h-screen">
-      <section className="bg-[#1F2531] text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.about.heroHeading}</h1>
-          <p className="text-xl text-blue-200 max-w-2xl">{t.about.heroSub}</p>
-        </div>
-      </section>
+      <PageHero heading={t.about.heroHeading} sub={t.about.heroSub} />
 
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="max-w-3xl">
+              <BrandBar className="mb-6" />
               <h2 className="text-3xl font-bold text-[#1F2531] mb-6">{t.about.missionHeading}</h2>
               <p className="text-gray-600 text-lg leading-relaxed">{t.about.missionBody}</p>
             </div>
@@ -33,6 +31,7 @@ export default function AboutPage() {
 
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <BrandBar align="center" className="mb-6" />
           <h2 className="text-3xl font-bold text-[#1F2531] mb-4 text-center">{t.about.whyHeading}</h2>
           <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">{t.about.whySub}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -49,6 +48,7 @@ export default function AboutPage() {
 
       <section className="py-16 bg-[#1F2531] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <BrandBar align="center" tone="light" className="mb-6" />
           <h2 className="text-3xl font-bold mb-6">{t.about.commitHeading}</h2>
           <p className="text-xl text-blue-200 max-w-3xl mx-auto leading-relaxed">{t.about.commitBody}</p>
         </div>

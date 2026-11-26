@@ -1,17 +1,14 @@
 'use client'
 import { useLanguage } from '@/lib/LanguageContext'
+import PageHero from '@/components/PageHero'
+import BrandBar from '@/components/BrandBar'
 
 export default function HowItWorksPage() {
   const { t } = useLanguage()
 
   return (
     <div className="min-h-screen">
-      <section className="bg-[#1F2531] text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.howItWorksPage.heroHeading}</h1>
-          <p className="text-xl text-blue-200 max-w-2xl">{t.howItWorksPage.heroSub}</p>
-        </div>
-      </section>
+      <PageHero heading={t.howItWorksPage.heroHeading} sub={t.howItWorksPage.heroSub} />
 
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,7 +20,7 @@ export default function HowItWorksPage() {
                     {step.number}
                   </div>
                   {index < t.howItWorksPage.steps.length - 1 && (
-                    <div className="w-0.5 h-full bg-[#036FE7] mt-4 opacity-30" />
+                    <div className="flex gap-1 h-full mt-4" aria-hidden="true"><span className="w-[3px] h-full bg-[#E0020F] opacity-60" /><span className="w-[3px] h-full bg-[#036FE7] opacity-60" /></div>
                   )}
                 </div>
                 <div className="pb-12">
@@ -38,6 +35,7 @@ export default function HowItWorksPage() {
 
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <BrandBar align="center" className="mb-6" />
           <h2 className="text-3xl font-bold text-[#1F2531] mb-4">{t.howItWorksPage.readyHeading}</h2>
           <p className="text-gray-600 text-lg mb-8">{t.howItWorksPage.readySub}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

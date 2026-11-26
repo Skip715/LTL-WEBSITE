@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useLanguage } from '@/lib/LanguageContext'
+import BrandBar from '@/components/BrandBar'
 
 export default function CTA() {
   const { t } = useLanguage()
@@ -9,10 +10,7 @@ export default function CTA() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-gradient-to-br from-[#1F2531] to-[#036FE7] rounded-2xl p-12 md:p-16 text-white text-center">
-          <div className="flex flex-col items-center gap-1.5 mb-6" aria-hidden="true">
-            <span className="block h-1.5 w-16 rounded-sm bg-[#E0020F]" />
-            <span className="block h-1.5 w-16 rounded-sm bg-white" />
-          </div>
+          <BrandBar align="center" tone="light" className="mb-6" />
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             {t.cta.heading}
           </h2>

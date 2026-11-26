@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useLanguage } from '@/lib/LanguageContext'
+import BrandStripe from '@/components/BrandStripe'
 import { CONTACT_EMAIL, COMPANY_NAME } from '@/lib/site'
 
 export default function Footer() {
@@ -8,10 +9,17 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#1F2531] text-white">
+      <BrandStripe />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="mb-4">
+              <img
+                src="/competitive-components-icon.png"
+                alt=""
+                aria-hidden="true"
+                className="h-20 w-auto mb-3"
+              />
               <img
                 src="/competitive-components-wordmark-light.png"
                 alt="Competitive Components"

@@ -2,20 +2,27 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useLanguage } from '@/lib/LanguageContext'
+import BrandStripe from '@/components/BrandStripe'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const { language, setLanguage, t } = useLanguage()
 
   return (
-    <nav className="bg-white text-[#1F2531] sticky top-0 z-50 shadow-md border-b border-gray-100">
+    <nav className="bg-white text-[#1F2531] sticky top-0 z-50 shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <Link href="/" className="flex items-center" aria-label="Competitive Components — home">
+            <img
+              src="/competitive-components-icon.png"
+              alt=""
+              aria-hidden="true"
+              className="h-11 md:h-14 w-auto mr-2 md:mr-3"
+            />
             <img
               src="/competitive-components-wordmark.png"
               alt="Competitive Components"
-              className="h-9 md:h-10 w-auto"
+              className="h-8 md:h-10 w-auto"
             />
           </Link>
 
@@ -85,6 +92,7 @@ export default function Navbar() {
           </div>
         )}
       </div>
+      <BrandStripe />
     </nav>
   )
 }

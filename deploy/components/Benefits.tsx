@@ -1,5 +1,6 @@
 'use client'
 import { useLanguage } from '@/lib/LanguageContext'
+import BrandBar from '@/components/BrandBar'
 
 export default function Benefits() {
   const { t } = useLanguage()
@@ -9,6 +10,7 @@ export default function Benefits() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
           <div>
+            <BrandBar className="mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-[#1F2531] mb-4">
               {t.benefits.heading}
             </h2>

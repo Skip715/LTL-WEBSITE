@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { useLanguage } from '@/lib/LanguageContext'
+import BrandBar from '@/components/BrandBar'
 
 export default function Hero() {
   const { t } = useLanguage()
@@ -13,10 +14,7 @@ export default function Hero() {
             <div className="inline-block bg-[#036FE7] bg-opacity-30 border border-[#036FE7] border-opacity-50 rounded-full px-4 py-2 text-sm font-medium text-blue-200 mb-6">
               {t.hero.badge}
             </div>
-            <div className="flex flex-col gap-1.5 mb-6" aria-hidden="true">
-              <span className="block h-1.5 w-16 rounded-sm bg-[#E0020F]" />
-              <span className="block h-1.5 w-16 rounded-sm bg-[#036FE7]" />
-            </div>
+            <BrandBar className="mb-6" />
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
               {t.hero.headline1}<br />
               <span className="text-[#036FE7]">{t.hero.headline2}</span>

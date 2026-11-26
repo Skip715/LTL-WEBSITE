@@ -8,6 +8,7 @@ export const translations = {
       howItWorks: 'How It Works',
       contact: 'Contact',
       getQuote: 'Get a Quote',
+      backHome: 'Back to home',
     },
     hero: {
       badge: 'Flexible IT Hardware Leasing',
@@ -137,6 +138,7 @@ export const translations = {
       howItWorks: 'Cómo Funciona',
       contact: 'Contacto',
       getQuote: 'Solicitar Presupuesto',
+      backHome: 'Volver al inicio',
     },
     hero: {
       badge: 'Arrendamiento Flexible de Hardware IT',
