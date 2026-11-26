@@ -5,8 +5,8 @@ import Footer from '@/components/Footer'
 import { LanguageProvider } from '@/lib/LanguageContext'
 
 export const metadata: Metadata = {
-  title: 'Long Term Leasing S.R.L | Flexible IT Hardware Leasing',
-  description: 'Empowering businesses with flexible IT hardware leasing solutions. Protect your working capital and keep your team equipped with modern technology.',
+  title: 'Competitive Components | Flexible IT Hardware Leasing',
+  description: 'Competitive Components — empowering businesses with flexible IT hardware leasing solutions. Protect your working capital and keep your team equipped with modern technology.',
 }
 
 export default function RootLayout({

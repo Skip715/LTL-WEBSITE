@@ -9,9 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        navy: '#1a2b4a',
-        cobalt: '#2b6cb0',
-        'cobalt-light': '#3b82c4',
+        navy: '#1F2531',
+        brandred: '#E0020F',
+        cobalt: '#036FE7',
+        'cobalt-light': '#2393F9',
       },
       fontFamily: {
         sans: ['Inter', 'Arial', 'sans-serif'],
