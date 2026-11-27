@@ -6,8 +6,14 @@ export default function Benefits() {
   const { t } = useLanguage()
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden py-20 bg-gray-50">
+      <img
+        src="/competitive-components-icon.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute -left-24 top-6 w-[560px] md:w-[680px] max-w-none opacity-[0.08] pointer-events-none select-none"
+      />
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
           <div>
             <BrandBar className="mb-6" />
